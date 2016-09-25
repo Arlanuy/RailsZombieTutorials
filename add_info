@@ -1,0 +1,6 @@
+migration commands
+
+rename column :zombies, :bio, :description
+rename_table :zombies, :ghouls
+drop_table :zombies
+change column :zombies, :age, :integer, limit: 4
